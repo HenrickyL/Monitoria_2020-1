@@ -1,0 +1,7 @@
+Desejos:
+    Reexplicar os conteúdos (lógica e Condicional)
+    Instalação vscode e nodejs
+    comados de entrada e saída
+Condional(seleção):
+    - Se então | if else
+    - varios ifs e (else if)
