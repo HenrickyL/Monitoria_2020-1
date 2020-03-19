@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta chatset = "UTF-8">>
+	<meta name = "viewport" content = "width=device-width">
+	<meta http-equiv="X-UA-Compatible" content ="ie=edge">
+	<title> JS CÉLULA</title>
+</head>
+<!--Comentário-->
+	<h1> Titulo</h1>
+	<p> texto</p>
+
+	<script>
+
+		alert("Bem vindo");
+		var nome = prompt("Qual seu nome?");
+		alert("Olá, "+ nome+"!");
+		//TIPOS DE VARIAVEIS:
+			//Var
+			//Let
+			// Const - não muda
+
+
+
+		//comentário
+		//console.log("Hello word!"); //print
+		//var nome = "lolzinho"//usar qualquer tipo
+		var Aluno ={ //tipo objeto
+			nome: 'erik',
+			matricula: 427602,
+			curso:  'CC',
+			qtdHoras:10,
+		};
+		var Celula ={
+			titulo:'Web',
+			encontros: 2,
+		};
+		function CalcHoras(qtdHora,nEncon){
+			var resultado = qtdHora*nEncon;
+			return resultado;
+		}
+
+		var resul = CalcHoras(Aluno.qtdHoras,Celula.encontros);
+		console.log(Aluno,'\n',Celula,'\n',resul);
+
+		//ternário
+		console.log((resul>10)?"Bom":"mal");
+
+
+		//console.log(Aluno);
+	</script>
+</html>
