@@ -1,0 +1,42 @@
+UFC - Quixadá - FuP 
+
+# Teste de Nível <13/03/20>
+
+     -> Escolha 3 questões resolva
+
+Q1)  Uma escola deseja atualizar seu sistema de notas para o estilo americano, onde uma nota entre 0 e 100 é atribuida a um rank de A a F, logo 
+
+- Abaixo de 25 (F)
+- 25 a 45 (E)
+- 45 a 50 (D)
+- 50 a 60 (C)
+- 60 a 80 (B)
+- acima de 80 (A)
+
+receba do usuário uma nota e print seu rank no novo sistema.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Q2) Faça um algoritmo que recebe a idade de 3 pessoas e imprima na tela a maior entre elas.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Q3) Faça um algoritmo que receba N números e retorne a média destes valores
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Q4) Faça um algoritmo que recebe 3 números e retorne quantos deles são pares.
+
+-----------------------------------------------------------------------------------------------------------------------------
+Q5) Uma loja está oferecendo desconta de 8% para quem comprar acima de 25 unidades de um produto A, 15% para quem comprar acima de 40 unidades e 25% para quem comprar acima de 100 unidades. Faça um algoritmo que recebe o preço por unidade e a quantidade comprada de um cliente e retorne o valor que ele deve pagar.
+-----------------------------------------------------------------------------------------------------------------------------
+Q6) Faça um algoritmo que recebe um valor N e retorne a soma dos N primeiros elementos dos naturais.
+ex: n= 5 => 1+2+3+4+5 = 15
+
+Utilize uma repetição ou use a fórmula,
+S(n) = 1+2+3+ ... +n = n(n+1)/2
+
+
+http://dontpad.com/Monitoria_Fup_2020_1
+
