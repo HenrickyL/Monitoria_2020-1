@@ -1,5 +1,8 @@
 //notas
-nota = 26 //suponto, tem que fazer para todos os casos
+//copia o codigo
+
+
+var nota = Number(getline()) //suponto, tem que fazer para todos os casos
 
 if(0<=nota && nota<25){ // 0 - 24 
     console.log("F")
@@ -11,7 +14,7 @@ if(0<=nota && nota<25){ // 0 - 24
     console.log("C")
 }else if(60<=nota && nota<80){// 60 - 79
     console.log("B")
-}else{ //>=80
+}else if (nota >= 80){ //>=80
     console.log("A")
 }
 
