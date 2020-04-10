@@ -4,6 +4,9 @@
 ## Estrutura de dados
 São formas de Armazenar e Operar sobre dados, onde implementamos algum Tipo Abstrato de Dado(TAD).
 
+
+OBS: Pensando na sua Eficiência e complexidade.
+
 As principais Estruturas vistas na cadeira são:
 * Lista Sequêncial
 * lista Encadeada 
