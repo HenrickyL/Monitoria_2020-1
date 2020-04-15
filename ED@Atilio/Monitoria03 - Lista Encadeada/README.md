@@ -27,10 +27,12 @@ Existem 4 tipos de Listas Encadeadas:
 
 
 ### Precisamos:
-* **Variáveis:**
-    * **Vetor:** Um vetor precisa de um tamanho, ou seja, uma capadidade;
-    * **Capacidade:** Quanto podem ser adicionado;
-    * **Tamanho:** Quandos tem adicionado;
+1. Criar uma estrutura nó que armazene informações
+    * **Variáveis:**
+        * **value:** armazena o valor
+        * **next:** Ponteiro para o próximo nó
+2. Pensar em qual tipo queremos implementar
+3. Criar as operações 
 * **Operações:**
     * Adicionar
     * Remover
