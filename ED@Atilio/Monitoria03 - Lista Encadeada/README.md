@@ -15,7 +15,7 @@ As principais Estruturas vistas na cadeira são:
 * Arvore
 
 ## Lista Encadeada
-Para implementar uma Lista Encadeada precisamos fazer uma TAD, ou seja, um estrutura capaz de Armazenar e Operar sobre esses dados. Uma lista Encadeada é baseadas em conectar posições unitárias de memória para armazenar nossos dados.
+Para implementar uma Lista Encadeada precisamos fazer uma TAD, ou seja, um estrutura capaz de Armazenar e Operar sobre esses dados. Uma lista Encadeada é baseada em conectar posições unitárias de memória para armazenar nossos dados.
 
 <br>
 
@@ -33,8 +33,9 @@ Existem 4 tipos de Listas Encadeadas:
         * **next:** Ponteiro para o próximo nó
 2. Pensar em qual tipo queremos implementar
 3. Criar as operações 
-* **Operações:**
-    * Adicionar
-    * Remover
-    * Verificar quantos foram adicionados
-    * ...
+    * **Operações:**
+        * Adicionar
+        * Remover
+        * Tamanho
+        * Printar elementos       
+        * ...
