@@ -7,7 +7,7 @@ using namespace std;
 
 
 int main(){
-    LinkedList L;/*
+    LinkedList L;
     cout << L.isEmpty() << "\n";
     L.add(5);
     L.add(7);
@@ -21,21 +21,15 @@ int main(){
     L.print();
     L.printReverse();
     cout << "Size: " <<L.size() << "\n";
+
     L.removeLast();
     L.removeLast();
     L.print();
     cout << "Size: " <<L.size() << "\n";
-    L.clear();*/
-    L.print();
-    L.removeLast();
-    L.add(1);
-    L.add(2);
-    L.add(3);
-    L.add(4);
-    L.add(5);
-    cout << "Size: " <<L.size() << "\n";
-    L.print();
+    
     cout << L.at(3) << "\n";
+    L.clear();
+    
 
 
     return 0;
