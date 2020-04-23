@@ -20,7 +20,7 @@ Para implementar uma Lista Encadeada precisamos fazer uma TAD, ou seja, um estru
 <br>
 
 Existem 4 tipos de Listas Encadeadas:
-* Lista Simplesmente Encadeada
+* **Lista Simplesmente Encadeada**
 * Lista Duplamente Encadeada
 * Lista Simplesmente Encadeada Circular
 * Lista Duplamente Encadeada Curcular
