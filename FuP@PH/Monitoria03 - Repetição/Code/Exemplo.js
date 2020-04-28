@@ -1,4 +1,4 @@
-//Repetição
+//Repeticao
 
 //While  - Enquanto (condição) faça
 //1ª exemplo

@@ -7,7 +7,7 @@ var i,n1,n2,med
 //para pegar a maior nota vou fazer uma variavel maior e uma menor, comparo e troco se for o caso
 var maior, menor
 
-for( i=1;i<=N; i++ ){
+for( i=1; i<=N ; i++ ){
     //recebo as duas notas
     n1 = Number(prompt(  "Digite a 1ª nota da "+ i+"ª Pessoa:" ))
     n2 = Number(prompt(  "Digite a 2ª nota da "+ i+"ª Pessoa:" ))
