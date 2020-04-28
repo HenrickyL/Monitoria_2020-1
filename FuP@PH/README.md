@@ -64,7 +64,7 @@
         * Loop Infinito
 
        ~~~javascript
-//Enquanto} ( condição )
+//Enquanto ( condição )
 while(condition){
     //bloco de código
 }
