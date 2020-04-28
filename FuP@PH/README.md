@@ -62,17 +62,16 @@
     ~~~
     - [ ] **Repeticão**
         * Loop Infinito
-
        ~~~javascript
-//Enquanto ( condição )
-while(condition){
-    //bloco de código
-}
-//Para
-var i;
-for( atribuição; condição; interação){
-    //bloco de código
-}
+        //Enquanto ( condição )
+        while(condition){
+            //bloco de código
+        }
+        //Para
+        var i;
+        for( atribuição; condição; interação){
+            //bloco de código
+        }
        ~~~
     - [ ] Listas e vetores
     - [ ] Matrizes
