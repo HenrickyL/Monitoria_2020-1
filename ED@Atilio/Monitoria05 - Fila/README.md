@@ -15,7 +15,7 @@ As principais Estruturas vistas na cadeira são:
 * Arvore
 
 ## Fila (Queue)
-Para implementar uma Fila precisamos fazer uma TAD, ou seja, um estrutura capaz de Armazenar e Operar sobre esses dados. Uma Fila é baseada no conceito da tão cotidiana fila, ou seja, uma sequencia de elementos onde a inserção é no final e a retirada é pela inicio.
+Para implementar uma Fila precisamos fazer uma TAD, ou seja, um estrutura capaz de Armazenar e Operar sobre esses dados. Uma Fila é baseada no conceito da tão cotidiana fila, ou seja, uma sequencia de elementos onde a inserção é no final e a retirada é pela inicio(FIFO).
 
 
 ### Precisamos:
