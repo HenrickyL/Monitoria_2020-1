@@ -24,7 +24,8 @@ Para implementar uma Fila precisamos fazer uma TAD, ou seja, um estrutura capaz 
         * **last:** armazena ultimo elemento
         * **first:** Armazere o primeiro elemento
 2. Pensar em qual tipo queremos implementar
-    Trabalhando com vetor ou nós
+    - Trabalhando com vetor ou nós
+
 3. Criar as operações 
     * **Operações:**
         * Enfileirar (enQueue)
