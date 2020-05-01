@@ -1,4 +1,4 @@
-# Monitoria 05 - Queue
+# Monitoria 06 - Stack
 
 
 ## Estrutura de dados
@@ -21,7 +21,7 @@ Para implementar uma Pilha precisamos fazer uma TAD, ou seja, um estrutura capaz
 ### Precisamos:
 1. Criar uma classe que armazene informações
     * **Variáveis:**
-        * **capacity:** Armazena 
+        * **capacity:** Armazena a capacidade maxima de elementos
         * **topo:** Armazere elemento do topo
         * **vetor:** Vetor para armazenar
 2. Pensar em qual tipo queremos implementar
