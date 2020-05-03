@@ -1,90 +1,89 @@
 # Variáveis e Tratamento de dados - JS
 
 ## Variáveis
-
 As variáveis são dados que estão ou poderão estar armazenado em uma posição da memória. Estes dados são de um tipo e podem se operados ou relacionado de alguma forma ou até convertidos.
 
 ### Tipos primitivos principais:
 
 Todo dado é de um tipo específico, no JavaScript temos 3 tipos principais:
-    - **Number:**
-        Trabalha com os tipos numéricos, seja ele um numero inteiro ou quebrado.
-           - **Int**eger (Nº Inteiro)
-                - ... -2, -1, 0, 1 ,2, ...
-           - **Float** (Nº Real)
-                - ...-1.2, -1, -0.5, -0.51 ,0, 0.5, 0.51, 1, 1.2 ...
-           - Engloba valores numéricos N (vou definir assim), NaN(Not a Number) e Infinity.
+- [ ] **Number:**
+    Trabalha com os tipos numéricos, seja ele um numero inteiro ou quebrado.
+       - **Int**eger (Nº Inteiro)
+            - ... -2, -1, 0, 1 ,2, ...
+       - **Float** (Nº Real)
+            - ...-1.2, -1, -0.5, -0.51 ,0, 0.5, 0.51, 1, 1.2 ...
+       - Engloba valores numéricos N (vou definir assim), NaN(Not a Number) e Infinity.
 
-    - **String:**
-        Trabalha com textos.
-            - **Char** (Caractere)
-                São caracteres individuáis.
-                - 'a', 'A', 'b','1', ' ', '&',...
-            - **String** (Texto)
-                São formados pela combinação de caracteres, esta combinação podemos chamar de *vetor de caracteres* ou *string*. Estes vertores sempre tem associado a ideia de tamanho(toda palavra tem uma quantidade de letras) e indice.
-                - "abacaxi", "laranja", "Carlos",...
-    - **Boolean:**
-        Tudo que os computadores processam são **0**s e **1**s, logo, **verdadeiro** e **falso**, o **Haver** ou **não** corrente no circuito. Assim como, toda relação lógica envolve o conceito de verdadeiro ou falso, logo uma linguagem tem que trabalhar com esses dados.
-                - True e False
+- [ ] **String:**
+    Trabalha com textos.
+        - **Char** (Caractere)
+            São caracteres individuáis.
+            - 'a', 'A', 'b','1', ' ', '&',...
+        - **String** (Texto)
+            São formados pela combinação de caracteres, esta combinação podemos chamar de *vetor de caracteres* ou *string*. Estes vertores sempre tem associado a ideia de tamanho(toda palavra tem uma quantidade de letras) e indice.
+            - "abacaxi", "laranja", "Carlos",...
+- **Boolean:**
+    Tudo que os computadores processam são **0**s e **1**s, logo, **verdadeiro** e **falso**, o **Haver** ou **não** corrente no circuito. Assim como, toda relação lógica envolve o conceito de verdadeiro ou falso, logo uma linguagem tem que trabalhar com esses dados.
+            - True e False
 <br>
 Podemos Verificar o tipo de uma variável pela função **typeof**.
 
 ### Operadores:
 Os operadores são so simbolos reservados pelo sistema a fim de operar ou relacionar variáveis. Existem 3 tipos:
-    - **Aritméticos:**
-        São operadores que operam os dados de forma matemática, ou seja, operam sobre números e retorna um valor do mesmo tipo 
-        ~~~javascript
-    /*
-     +            Adição(Nº) ou Concatenação(Txt)
-     -            Subtração 
-     *            Multiplicação
-     /            Divisão
-     %            Resto da divisão
-    -------------------------------
-     Number + Number = Number
-     Int + Int = Int
-     Float + Int = Float
-     String + String = String
-    */
-        ~~~
-    - **Relacionais:**
-        São operadores que operam variáveis a fim de retornar um valor verdade, ou seja, verificam sentenças, igualdade, diferença, maioridade ou menoridade.
-        ~~~javascript
-    /*
-     ==             Igualdade ( O simbolo "=" é reservado para atribuição)
-     >              Maior que
-     >=             Maior ou igual
-     <              Menor que
-     <=             Menor ou igual
-     !=             Não igual (Diferente)
-     ---------------------------------------
-     5 > 3              Verdade
-     5 < 5              Falso
-     "azul" == "lilaz"  Falso
-     10 < 100           Verdade 
-      
-    */
-        ~~~
-    - **Lógicos**
-        São operadores que operam sobre valores verdade (T ou F), ou seja, combinar relações/verificações.
-        ~~~javascript
-    /*
-     &&             E
-     ||             Ou
-     !              Não
-     -------------------------
-     True && True                       True
-     True && True && True && False      False
-     True || True                       True
-     True || False || False || False    True
-     True                               True
-     !True                              False
-     --------------------------
-     Meu presente tem que ser Azul && Grande && Caro
-     Vou a praia se estiver Ensolarado || se estiver com Onda
-    */        
-        ~~~ 
- 
+- **Aritméticos:**
+    São operadores que operam os dados de forma matemática, ou seja, operam sobre números e retorna um valor do mesmo tipo 
+    ~~~javascript
+/*
+ +            Adição(Nº) ou Concatenação(Txt)
+ -            Subtração 
+ *            Multiplicação
+ /            Divisão
+ %            Resto da divisão
+-------------------------------
+ Number + Number = Number
+ Int + Int = Int
+ Float + Int = Float
+ String + String = String
+*/
+    ~~~
+- **Relacionais:**
+    São operadores que operam variáveis a fim de retornar um valor verdade, ou seja, verificam sentenças, igualdade, diferença, maioridade ou menoridade.
+    ~~~javascript
+/*
+ ==             Igualdade ( O simbolo "=" é reservado para atribuição)
+ >              Maior que
+ >=             Maior ou igual
+ <              Menor que
+ <=             Menor ou igual
+ !=             Não igual (Diferente)
+ ---------------------------------------
+ 5 > 3              Verdade
+ 5 < 5              Falso
+ "azul" == "lilaz"  Falso
+ 10 < 100           Verdade 
+  
+*/
+    ~~~
+- **Lógicos**
+    São operadores que operam sobre valores verdade (T ou F), ou seja, combinar relações/verificações.
+    ~~~javascript
+/*
+ &&             E
+ ||             Ou
+ !              Não
+ -------------------------
+ True && True                       True
+ True && True && True && False      False
+ True || True                       True
+ True || False || False || False    True
+ True                               True
+ !True                              False
+ --------------------------
+ Meu presente tem que ser Azul && Grande && Caro
+ Vou a praia se estiver Ensolarado || se estiver com Onda
+*/        
+    ~~~ 
+
 
 ## Tratamento de Dados
 
