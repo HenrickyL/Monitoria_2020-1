@@ -1,26 +1,29 @@
 # Variáveis e Tratamento de dados - JS
+
 ## Variáveis
+
 As variáveis são dados que estão ou poderão estar armazenado em uma posição da memória. Estes dados são de um tipo e podem se operados ou relacionado de alguma forma ou até convertidos.
 
 ### Tipos primitivos principais:
-Todo dado é de um tipo específico, no JavaScript temos 3 tipos principais:
-    * **Number:**
-        Trabalha com os tipos numéricos, seja ele um numero inteiro ou quebrado.
-           * **Int**eger (Nº Inteiro)
-                - ... -2, -1, 0, 1 ,2, ...
-           * **Float** (Nº Real)
-                - ...-1.2, -1, -0.5, -0.51 ,0, 0.5, 0.51, 1, 1.2 ...
-           * Engloba valores numéricos N (vou definir assim), NaN(Not a Number) e Infinity.
 
-    * **String:**
+Todo dado é de um tipo específico, no JavaScript temos 3 tipos principais:
+    - **Number:**
+        Trabalha com os tipos numéricos, seja ele um numero inteiro ou quebrado.
+           - **Int**eger (Nº Inteiro)
+                - ... -2, -1, 0, 1 ,2, ...
+           - **Float** (Nº Real)
+                - ...-1.2, -1, -0.5, -0.51 ,0, 0.5, 0.51, 1, 1.2 ...
+           - Engloba valores numéricos N (vou definir assim), NaN(Not a Number) e Infinity.
+
+    - **String:**
         Trabalha com textos.
-            * **Char** (Caractere)
+            - **Char** (Caractere)
                 São caracteres individuáis.
                 - 'a', 'A', 'b','1', ' ', '&',...
-            * **String** (Texto)
+            - **String** (Texto)
                 São formados pela combinação de caracteres, esta combinação podemos chamar de *vetor de caracteres* ou *string*. Estes vertores sempre tem associado a ideia de tamanho(toda palavra tem uma quantidade de letras) e indice.
                 - "abacaxi", "laranja", "Carlos",...
-    * **Boolean:**
+    - **Boolean:**
         Tudo que os computadores processam são **0**s e **1**s, logo, **verdadeiro** e **falso**, o **Haver** ou **não** corrente no circuito. Assim como, toda relação lógica envolve o conceito de verdadeiro ou falso, logo uma linguagem tem que trabalhar com esses dados.
                 - True e False
 <br>
@@ -28,7 +31,7 @@ Podemos Verificar o tipo de uma variável pela função **typeof**.
 
 ### Operadores:
 Os operadores são so simbolos reservados pelo sistema a fim de operar ou relacionar variáveis. Existem 3 tipos:
-    * **Aritméticos:**
+    - **Aritméticos:**
         São operadores que operam os dados de forma matemática, ou seja, operam sobre números e retorna um valor do mesmo tipo 
         ~~~javascript
     /*
@@ -44,7 +47,7 @@ Os operadores são so simbolos reservados pelo sistema a fim de operar ou relaci
      String + String = String
     */
         ~~~
-    * **Relacionais:**
+    - **Relacionais:**
         São operadores que operam variáveis a fim de retornar um valor verdade, ou seja, verificam sentenças, igualdade, diferença, maioridade ou menoridade.
         ~~~javascript
     /*
@@ -62,7 +65,7 @@ Os operadores são so simbolos reservados pelo sistema a fim de operar ou relaci
       
     */
         ~~~
-    * **Lógicos**
+    - **Lógicos**
         São operadores que operam sobre valores verdade (T ou F), ou seja, combinar relações/verificações.
         ~~~javascript
     /*
@@ -128,7 +131,7 @@ Concatenação é a operação de juntar duas strings, ou, juntar duas palavras.
 
 ### Conversão de tipo:
     Variáveis podem ser convertidas, ou seja, transformar de um tipo para outro. Normalmente se pensa em converter um tipo Number para String ou vice-versas
-    * **Number:**
+    - **Number:**
         Podemos converter o tipo **String** para **Number** utilizando as funções:
         - **Number(X)**: Converte X para Number.
     ~~~javascript
@@ -168,7 +171,7 @@ Concatenação é a operação de juntar duas strings, ou, juntar duas palavras.
     Number.parseFloat("Lemore") NaN
     Number.parseFloat(5/0)      Infinity
     ~~~
-    * **String**
+    - **String**
         - **String(X)**: Converte X para texto.
         - **X.toString()**: Converte X para string
         ~~~javascript
