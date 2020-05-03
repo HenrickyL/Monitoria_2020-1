@@ -61,12 +61,11 @@ São operadores que operam variáveis a fim de retornar um valor verdade, ou sej
  <=             Menor ou igual
  !=             Não igual (Diferente)
  ---------------------------------------
- 5 > 3              Verdade
- 5 < 5              Falso
- "azul" == "lilaz"  Falso
- 10 < 100           Verdade 
-  
 */
+ 5 > 3              true
+ 5 < 5              false
+ "azul" == "lilaz"  false
+ 10 < 100           true 
 ~~~
 
 - **Lógicos**
@@ -77,17 +76,16 @@ São operadores que operam sobre valores verdade (T ou F), ou seja, combinar rel
  &&             E
  ||             Ou
  !              Não
- -------------------------
- True && True                       True
- True && True && True && False      False
- True || True                       True
- True || False || False || False    True
- True                               True
- !True                              False
- --------------------------
+--------------------------
  Meu presente tem que ser Azul && Grande && Caro
- Vou a praia se estiver Ensolarado || se estiver com Onda
-*/        
+ Vou a praia se estiver Ensolarado || se estiver com Onda 
+*/ 
+ True && True                       true
+ True && True && True && False      false
+ True || True                       true
+ True || False || False || False    true
+ True                               true
+ !True                              false        
 ~~~ 
 
 
@@ -194,7 +192,7 @@ Number.parseFloat(5/0)      Infinity
         ~~~
 
 ### Formatando String - ${}:
-    Visando facilitar a vida de quem está aprendendo a programar, existe esta técnica chamada **Template Strings** que permite a concatenação de strings de uma forma mais robusta.
+Visando facilitar a vida de quem está aprendendo a programar, existe esta técnica chamada **Template Strings** que permite a concatenação de strings de uma forma mais robusta.
 
 ~~~javascript
 // TemplateString - entre crases utilize ${variável}
