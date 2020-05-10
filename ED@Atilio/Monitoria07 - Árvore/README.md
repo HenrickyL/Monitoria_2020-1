@@ -14,7 +14,7 @@ As principais Estruturas vistas na cadeira são:
 * Pilha
 * **Árvore Binária**
 
-## Arvore Binária (stack)
+## Arvore Binária
 Para implementar uma Árvore Binária precisamos fazer uma TAD, ou seja, um estrutura capaz de Armazenar e Operar sobre esses dados. Uma Arvore Binária é baseada no conceito de uma arvore que nos conhecemos, onde apartir de um nó ele se ramifica em dois e esses dois ramificam em mais dois e assim por diante até chegar nas folhas.
 
 * **Definição:** (recursiva) Um arvore **T** é construida:
