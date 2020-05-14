@@ -73,7 +73,6 @@ for( atribuição; condição; interação){
     //bloco de código
 }
 ~~~
-
     - [ ] **Listas e vetores**
     - [ ] Matrizes
     - [ ] Strings
