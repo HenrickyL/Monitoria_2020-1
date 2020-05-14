@@ -1,5 +1,10 @@
 # Variáveis e Tratamento de dados - JS
 
+
+[//]: <> (falar de Variáveis local e global)
+[//]: <> (tipagem dinâmica, )
+
+
 ## Variáveis
 As variáveis são dados que estão ou poderão estar armazenado em uma posição da memória. Estes dados são de um tipo e podem se operados ou relacionado de alguma forma ou até convertidos.
 
@@ -201,8 +206,8 @@ Txt = `${Nome} tem ${idade} anos e tirou ${Nota} na média! `
 Txt = Nome + " tem " + idade + " anos e tirou " +Nota+ " na média!"
 ~~~
 
-### Conhecendo a variável String
-JavaScript trabalha com objetos, ou seja, elementos que carregam atributos e métodos padrões - Esses conceitos estão relacionados a **Orientação a Objetos**. Estas variáveis e Funções que este objeto tras podem ser acessadas utilizando **.**. Algumas destas funcionalidades:
+### Alguns Métodos da variável String
+JavaScript trabalha com objetos, ou seja, elementos que carregam atributos e métodos padrões - Esses conceitos estão relacionados a **Orientação a Objetos**. Estas variáveis e Funções que este objeto trás podem ser acessadas utilizando **.**. Algumas destas funcionalidades:
 
 ~~~javascript
 S = "Ninho de Mafagafos"
@@ -212,7 +217,143 @@ S.length            18                      // atributo - Sem parenteses
 S.toUpperCase()     "NINHO DE MAFAGAFOS"    //Método - com parenteses
 //tudo Minusculo
 S.toLowerCase()     "ninho de mafagafos"
+
+//dividir uma string apartir de um separador
+data = "12/05/2020"
+data.split('/')     [ '12', '05', '2020' ]
 ~~~
 
+### Definindo Tarefas a variáveis
+Em programação podemos utilizar o nome que quisermos para uma variável e assim como o nome podemos definir uma função/Tarefa simbólica, ou seja, definir o papel desta variável para o seu código ou bloco de código.
+
+* **Iterador**:
+    * **definição**: *É a ação de repetir algo. a repetição de um conjunto de instruções por uma quantidade finita de vezes ou então, enquanto uma condição seja aceita.* **Ou seja,**Quando trabalhamos com repetição atribuimos uma variável a tarefa de permitir a repetição sobre uma determinada condição.
+    * **Tarefa**:
+Geralmente a variavel iteradora é inicializada quando atribuimos um valor inicial e depois usamos de uma incrementação ou decrementaçaõ para que ela chege no objetivo que definimos.
+
+
+* **Incrementar**
+    * **Motivação:** Quando queremos contar as pessoas de uma sala temos que fazer a massante tarefa de contar uma a uma e para fazer isso acabos reservando um lugar na nossa cabeça para guardar essa informação, geralmente não criamos mais de um lugar, pensamos no numero atual e descartamos o anterior.
+    * **Tarefa:** Aproveitamos uma variável para definir a posição na iteração(repetição), utilizamos dela mesma para salvar os valores. Não precisamos de mais de uma, pois o próximo número é o que eu tinha antes mais 1,  ou seja, utilizamos o conceito de **Adição**.
+~~~javascript
+//Em uma repetição
+i=0 //nosso iterador
+N = 10 // nosso objetivo
+//definimos uma condição: Enquanto i < N(10)
+while(i<N){
+    console.log(i) // printar o valor de i
+    i =  i+1 // a magia está aqui
+    /*  lembrando que o simbolo "=" tem funçaõ de atribuição,
+        logo tudo que está a direita é colocado à esqueda
+        assim,
+        o valor antigo de i é incrementado(adiciodanado) em um valor     
+    */
+}
+//resultado
+0,1,2,3,4,5,6,7,8,9
+//se Usassemos i<=N
+0,1,2,3,4,5,6,7,8,9
+//Perceba que utilizamos apen
+~~~
+* **Decrementar**
+Tem o mesmo conceito do Incrementar, porém com a ideia de **subtração**.
+    * **Motivação:** Quando temos na cabeça a quantidade de cochinhas que você pode comer em uma cento de salgados que está dividindo com os amigos, você guarda na cabeça a quantidade total de salgados e vai diminuindo enquanto vai comendo.
+    * **Tarefa**: Pegar uma valor inicial e ir reduzindo o valor do mesmo até chegar a um certo objetivo/condição. Desta forma, acabamos utilizamos o valor anterior **subtraido** de 1 ou mais.
+~~~javascript
+N=10 // quantidade de cochinhas que posso comer
+i=N  // iterador é o i e vamos decrementar até 0
+while(i > 0){ // enquanto i for maior que 0 eu posso comer
+    i = i - 1 // vou decrementando 1 a 1
+}
+~~~
+* **Acumulador**
+    * **Objetivo:** tem o mesmo objetivo que o nome sujere acumular alguma coisa, ou seja, começar com um objeto, depois outro e outro até alcançar um objetivo ou sua casa não sobrar espaço para você. Como a quantidade de monstros que você matou no seu jogo favorito.
+    * **Tarefa:** Uma variável acumuladora pode ir guardando valores até atender uma condição ou ao final de uma tarefa.
+~~~javascript
+//no exemplo da média das alturas dos alunos de uma sala
+N = 30 quantidade de pessoas
+soma = 0 // variável acumuladora
+i = 0 // variável iteradora
+x = 0 // variável que vai receber as alturas individuais 
+//loop
+for(i=0; i<N ;i++){ // vou recebendo as alturas e acumulando em soma
+    x = Number(prompt())
+    soma = soma + x
+}
+media = soma / N //calculo da média
+~~~
+
+### Alguns Métodos da variável Number
+Assim como as Strings as variáveis do tipo Number trazem consigo algumas funções interessantes, como:
+
+* **.toExponential(n)**:
+Esta função/método retorna o valor do número elevado a n;
+~~~javascript
+var x = 3
+var x2 = x.toExponential(2) //x elevado a 2 
+//resultado
+x2              9
+~~~
+* **.toFixed(n)**:
+Este método retorna uma string com n casas decimais;
+~~~javascript
+var x = 154.78659
+x.toFixed(3) // apenas 3 casas decimais
+"154.786"
+
+var y = 7
+y.toFixed(2)
+"7.00"
+~~~
+* **.toPrecision(n)**:
+retorna uma string com o número com tamanho **n**, ou seja, basicamente o mesmo do toFixed, porém ele arredonda os valores para caber no tamanho
+
+
+~~~javascript
+var x = 7.876
+x.toPrecision(2)    //2 números
+'7.9'
+x.toPrecision(3)    //2 números
+'7.88'
+x.toPrecision(5)
+'7.8760'
+// e se o tamanho for menor que o quantidade de casas decimais?
+x = 1768.8246
+x.toPrecision(1)
+'2e+3' // retorna a forma compacta, em notação cientifica, onde e = 10^
+x.toPrecision(2)
+'1.8e+3'
+x.toPrecision(5)
+'1768.8'
+~~~
+* conversão de tipos que ja vimos;
+* **Number.MAX_VALUE**
+É um atributo(variável) que retorma o maior número que o javascript pode processar;
+~~~javascript
+Number.MAX_VALUE
+1.7976931348623157e+308
+//um numero muito grande
+x.toPrecision(2)
+'1.8e+308' // algo em torno 2*10^308
+~~~
+* Exemplo especial:
+toLocaleString passamos o parametro da localização do tipo que estamos tratando, currency(monetário), no exemplo.
+~~~javascript
+var salario = 500
+salario.toLocaleString("pr-BR",{style:'currency', currency:"BRL"})
+'R$ 500,00'
+//retornou a variavel salário na forma pr-BR e na forma monetaria BRL brasileira
+salario.toLocaleString("pr-BR",{style:'currency', currency:"USD"})
+salario.toLocaleString("pr-BR",{style:'currency', currency:"EUR"})
+'€ 500,00'
+//retornou a variavel salário na forma pr-BR e na forma monetaria EUR Europeia
+~~~
+
+
+
+
+
+
+ 
 
 

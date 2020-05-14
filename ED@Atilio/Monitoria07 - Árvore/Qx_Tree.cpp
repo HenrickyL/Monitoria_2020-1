@@ -145,7 +145,7 @@ void BinaryTree::print(){//Node* root){
 }
 // remove um nó apartir da sua chave
 void BinaryTree::remove(int key){
-    
+    delete 
 }
 // retorna a quantidade de elementos da arvore
 int BinaryTree::size(){
