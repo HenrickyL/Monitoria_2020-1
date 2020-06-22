@@ -13,9 +13,10 @@
         - alocar
         - desalocar
         - apontar        
-    - Analogia: um ponteiro é como um link, ou seja, eu tenho o caminho padrão para fazer um arquivo, porém o ponteiro é um outro caminho que tenho para o mesmo arquivo.
+    - **Analogia:** um ponteiro é como um link, ou seja, eu tenho o caminho padrão para fazer um arquivo, porém o ponteiro é um outro caminho que tenho para o mesmo arquivo.
     - **Objetivo:**
 Quando passamos uma variável como argumento de uma função esta é passada por cópia, logo não podemos alterar o seu valor durante o processo. Por isso, ponteiro serve para trabalhar com posição da memória para alterar e trabalhar com os valores reais.
+- **Alocação Dinâmica:** Quando criamos um 
     
 ~~~c++
 // Ponteiro
