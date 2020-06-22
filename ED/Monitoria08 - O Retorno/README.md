@@ -16,7 +16,7 @@
     - **Analogia:** um ponteiro é como um link, ou seja, eu tenho o caminho padrão para fazer um arquivo, porém o ponteiro é um outro caminho que tenho para o mesmo arquivo.
     - **Objetivo:**
 Quando passamos uma variável como argumento de uma função esta é passada por cópia, logo não podemos alterar o seu valor durante o processo. Por isso, ponteiro serve para trabalhar com posição da memória para alterar e trabalhar com os valores reais.
-- **Alocação Dinâmica:** Tem como objetivo reservar uma região da memória para armazenar dados. Geralmente é utilizado quando usamos uma função para criar um objeto, pois, uma variável criada dentro de uma função so existe dentro do seu escopo.
+    - **Alocação Dinâmica:** Tem como objetivo reservar uma região da memória para armazenar dados. Geralmente é utilizado quando usamos uma função para criar um objeto, pois, uma variável criada dentro de uma função so existe dentro do seu escopo.
     
 ~~~c++
 // Ponteiro
