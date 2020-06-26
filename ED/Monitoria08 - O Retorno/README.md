@@ -43,7 +43,8 @@ struct Aluno{
 };
 ~~~
 * **Recursão:**
-    - Uma forma de resolução de problemas utilizando o conceito de chamar uma função dentro dela mesma, onde nos atentamos ao **caso base** e o **chamada da recursão**.
+	- "É um método de resolução de problemas que envolve quebrar um problema em subproblemas menores e menores até chegar a um problema pequeno o suficiente para que ele possa ser resolvido trivialmente".
+    	- Uma forma de resolução de problemas utilizando o conceito de chamar uma função dentro dela mesma, onde nos atentamos ao **caso base** e o **chamada da recursão**.
     -   
 ~~~c++
 //Recursão
@@ -59,3 +60,8 @@ int fib(int x){
 ## Proposta
 
 Vamos fazer um joguinho...
+
+
+## Referência
+ - [ panda ](https://panda.ime.usp.br/pensepy/static/pensepy/12-Recursao/recursionsimple-ptbr.html)
+
