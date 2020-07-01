@@ -1,6 +1,13 @@
 # Fazer um mini-game
 A ideia consiste em fazer um joguinho como o apresentado no vídeo **game.mkv**, onde o objetivo é treinar os conceitos de cabeçalho, ponteiros e estruturas.
 
+Você pode testar o código pronto executando o arquivo **exe**.
+
+~~~sh
+//no terminal do linux
+./exe 
+~~~
+
 
 ## Ideia base:
 
