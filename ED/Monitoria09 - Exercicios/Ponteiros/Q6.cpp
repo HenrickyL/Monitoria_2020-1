@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//lexicograficamente
+
 int strcmp(char *str1, char *str2){
 	for(int i = 0; str1[i] || str2[i]  ; i++){
 		if(str1[i] < str2[i]){

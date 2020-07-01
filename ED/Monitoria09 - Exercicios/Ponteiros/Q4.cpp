@@ -3,9 +3,9 @@ using namespace std;
 
 void MAX(int** M, int n, int* k,int* l, int* c){
 	// definir o maior elemento  / parametros iniciais
-	*k = M[0][0]; 
-	*l = 0;
-	*c = 0;
+	*k = M[0][0];  // o maior elemento
+	*l = 0; //posição em i
+	*c = 0; // posição em j
 	///////////////////////
 	for(int i=0; i< n; i++){
 		for(int j = 0; j<n ; j++){
@@ -45,10 +45,11 @@ int main(){
 	cout << "Digite os elementos da matriz:\n";
 	//criando a matriz
 	 
+	 
+	 
 	int** M =  new int*[n];// ponteiro para um ponteiro de inteiros
 		// ponteiros para vetores, ou vetor de ponteiros, vetor de vetor
 	//receber os valores
-	
 	for(int i = 0 ; i< n ; i++){
 		int * v = new int[n];
 		for(int j=0; j<n; j ++){

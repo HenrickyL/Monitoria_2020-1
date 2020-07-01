@@ -32,8 +32,8 @@ int main(){
 	char* s2 = new char[30];
 	cin >> s1;
 	cin >> s2;
-
-	// char s1[] = {"origem"};
+	
+	//char s1[] = {"origem"};
 	// char s2[] = {"destino"};
 	// char* s = new char[30];
 	// cin >> s;
