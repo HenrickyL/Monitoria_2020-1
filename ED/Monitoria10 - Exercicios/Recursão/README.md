@@ -60,7 +60,7 @@ int* fibVet(int n);
 //teste
 fibVet(0) - > []
 fibVet(1) - > [0]
-fibVet(0) - > [0,1] 
+fibVet(2) - > [0,1] 
 fibVet(6) - > [0,1,1,2,3,5]
 ~~~
 
