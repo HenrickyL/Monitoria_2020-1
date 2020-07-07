@@ -1,19 +1,25 @@
 # Exercício Ponteiros e Estrutura
 
-1. Crie uma função que recebe 2 struct Aluno e troque os nomes dos mesmos;
+**1.** Crie uma função que recebe 2 struct Aluno e troque os nomes dos mesmos;
+
 ~~~cpp
 void swapName(Aluno* a1, Aluno* a2);
 ~~~
-<hr>
 
-2. Cria uma função que copie um vetor **v** de tamanho **n** passado para uma variável externa.
+<hr>
+<br>
+
+**2.** Cria uma função que copie um vetor **v** de tamanho **n** passado para uma variável externa.
+
 ~~~cpp
 int* copy(int* v, int n);
 ~~~
 
 <hr>
+<br>
 
-3. Crie uma estrutura **Album** que guarde um vetor de **Musica**s e uma função que atualiza o preço do album como a soma dos preços das música multiplicado por uma taxa **x** (%);
+**3.** Crie uma estrutura **Album** que guarde um vetor de **Musica**s e uma função que atualiza o preço do album como a soma dos preços das música multiplicado por uma taxa **x** (%);
+
 ~~~cpp
 struct Music{
         string nome;
@@ -34,12 +40,12 @@ sum(musics.preco) = 46.78
 x = 5 // aumento de 5%
 */
 Album.preco += 46.78*0.05 // ou  = 46.78*1.05
-
 ~~~
 
 <hr>
+<br>
 
-4. **[extra]**  Faça um faça uma estrutura de Musica, junto com as funções de criar, printar, copiar e busca por nome. Agora faça as seguinteres operações.
+**4.** **[extra]**  Faça um faça uma estrutura de Musica, junto com as funções de criar, printar, copiar e busca por nome. Agora faça as seguinteres operações.
 * Recebe do usuário quantas musicas vão ser criadas;
 * Crie esta musicas;
 * Salve-as em um vetor;
@@ -50,8 +56,7 @@ struct Music{
         string nome;
         int ano;
         string autor;
-        int uniVendidas;
-        int precoUni;
+        float preco
 }
 ~~~
 
@@ -59,16 +64,18 @@ Com base na estrutura a baixo faça o que se pede:
 
 a. Printe o vetor de musica na ordem de inserção;
 ~~~cpp
-void printMusic(Music* m, int n);
+void printMusic(Music** m, int n);
+//porque ponteiro duplo? **
+// Porque m é um vetor que armazena ponteiros para musicas.
 ~~~
 b. Crie uma função que busque por nome da musica e edite o nome do autor;
 ~~~cpp
-Music (Music* m, int n, string musicName, string setAutor); 
+void searchMusic(Music** m, int n, string musicName, string setAutor); 
 ~~~
 
 c. Crie uma função que ordene as musica por nome (*pode ser qualquer método que conhecer*);
 ~~~cpp
-void sortName(Music* m, int n);
+void sortName(Music** m, int n);
 ~~~
 
 d. Utilize a função que copia uma musica para uma variável fora do vetor;
@@ -78,10 +85,10 @@ Music copyMusic(Music* music);
 
 
 
-
 <hr>
+<br>
 
-5. Faça um algoritmo que recebe 2 vetores, **v** e **w**, de tamanhos, **n** e **m**, e retorna um vetor que intercale os elementos dos dois vetores.
+**5.** Faça um algoritmo que recebe 2 vetores, **v** e **w**, de tamanhos, **n** e **m**, e retorna um vetor que intercale os elementos dos dois vetores.
 
 ~~~cpp
 int* intercal(int v*, int n, int* w, int m);
