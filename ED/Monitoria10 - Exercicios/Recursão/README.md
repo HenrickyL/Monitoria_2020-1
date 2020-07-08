@@ -73,7 +73,7 @@ fibVet(6) - > [0,1,1,2,3,5]
 <hr>
 <br>
 
-6. **[extra]** Faça um algoritmo recursivo que retorne a soma dos fatoriais dos elementos do vetor  **v** de tamanho **n**.
+**6.** **[extra]** Faça um algoritmo recursivo que retorne a soma dos fatoriais dos elementos do vetor  **v** de tamanho **n**.
 
 ~~~cpp
 int sumFat(int v, int n);
