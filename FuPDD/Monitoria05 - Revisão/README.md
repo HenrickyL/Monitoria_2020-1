@@ -31,6 +31,7 @@ by:<a href="https://www.linkedin.com/in/henrickyl/" > Henricky Lima</a>
     - [ ] Listas, vetores e Objetos
     - [ ] Funções
     - [ ] ...
+- [**Referência**](##Referência)
 
 <hr style = "page-break-before: always;">
 
@@ -176,6 +177,7 @@ X.toString(X)       "17.5"
 <hr>
 
 ## **Formatando String** - ${}:
+
 Visando facilitar a vida de quem está aprendendo a programar, existe esta técnica chamada **Template Strings** que permite a concatenação de strings de uma forma mais robusta.
 
 ~~~javascript
@@ -186,7 +188,7 @@ Txt = Nome + " tem " + idade + " anos e tirou " +Nota+ " na média!"
 ~~~
 
 ### Alguns Métodos da variável String
-JavaScript trabalha com objetos, ou seja, elementos que carregam atributos e métodos padrões - Esses conceitos estão relacionados a **Orientação a Objetos**. Estas variáveis e Funções que este objeto trás podem ser acessadas utilizando **.**. Algumas destas funcionalidades:
+JavaScript trabalha com objetos, ou seja, elementos que carregam atributos e métodos padrões - Este conceito está relacionado com o conceito de **Orientação a Objetos**. Estas variáveis(atributos) e Funções(métodos),  que um objeto trás podem ser acessadas utilizando ponto(**.**). Alguns exemplos desta funcionalidade:
 
 ~~~javascript
 S = "Ninho de Mafagafos"
@@ -203,6 +205,7 @@ data.split('/')     [ '12', '05', '2020' ]
 ~~~
 
 <hr style = "page-break-before: always;">
+
 
 ## Operadores
 
@@ -311,7 +314,7 @@ var res = x % y                      //x resto da divisão por y
 
 ## Comandos JS
 
-### Comentário:
+### **Comentário:**
 ~~~javascript
 //isto é um comentário
 var l = "Isto é uma comando"
@@ -322,7 +325,7 @@ Isto é
 */
 ~~~
 
-### Entrada e saída
+### **Entrada e saída:**
 ~~~javascript
 //(Output) Console
 console.log("Hello world!") // printa na tala
@@ -337,7 +340,7 @@ alert("Olá mundo!") //na forma de box
 var nome = prompt("Digite seu nome:") //na forma de box
 ~~~
 
-### Condicional
+### **Condicional:**
 
 * Condição simples
 
@@ -345,6 +348,10 @@ var nome = prompt("Digite seu nome:") //na forma de box
 // If / Se
 if(condição){
         //Bloco de código
+}
+//exemplo
+if( x%2 === 0 ){ /
+    console.log("x é par")
 }
 ~~~
 * Switch
@@ -370,7 +377,82 @@ variable = condition ? op_if_yes : op_if_not
 var a=5,b=7;
 var res = (a>b):"maior": "menor";
 ~~~
+<hr style = "page-break-before: always;">
+
+### **Repetição**
+
+* Enquanto (while)
+
+~~~javascript
+//while
+while(condição){
+    //Bloco de código
+}
+//exemplo
+var n = 0, x = 0
+while (n < 3) {
+    n++ //n = n+1
+    x += n
+}
+~~~
+
+
+
+* for_statement
+
+Um laço for é repetido até que a condição especificada seja falsa
+
+~~~javascript
+// for_statement padrão
+for([atribição] ; [condição] ; [incremento]){
+        //bloco de código
+}
+//exemplo - andar 5 passos para sul
+for(let i=0;i<5; i++){
+    cosole.log("passo ao sul!")
+}
+~~~
+- for_in
+
+A declaração for...in executa iterações a partir de uma variável específica, percorrendo todas as propriedades de um objeto.
+
+~~~javascript
+//for_in
+for(index in object){
+    //bloco de código
+}
+//exemplo
+var arr = [3, 5, 7];
+for (let i in arr) {
+    console.log(i +" - "+ arr[i]) // 0 - 3, 1 - 5, 3 - 7
+}
+
+~~~
+
+* for_of
+
+A declaração for...of cria uma laço com objetos interativos executando uma iteração para o valor de cada objeto.
+
+~~~javascript
+// for_of
+for(valor_objeto of objeto){
+    //bloco de código
+}
+
+//exemplo
+var Nomes = ["caio", "yusuke", "Henricky", "Pedro", "Alfredo"]
+for( let nome of Nomes ){
+    console.log( nome + " tem " + nome.length + " letras")
+}
+~~~
 
 <div style="margin-left:80vw;">
 <strong>Em Construção...</strong>
 </div>
+
+
+<hr style = "page-break-before: always;">
+
+ ## **Referência**
+
+* [Laços e iterações](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Lacos_e_iteracoes#for_statement) 

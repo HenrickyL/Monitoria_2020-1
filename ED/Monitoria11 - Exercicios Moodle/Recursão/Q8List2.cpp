@@ -8,7 +8,7 @@ se n é divisivel por algum dos seus anteriores
 */
 bool ePrimo(int n, int k=2){ //k < n
     //caso base 
-    if(k>= n) // pode usar sqrt(n) tambem (matematica permite)  
+    if(k>= sqrt(n)) // pode usar n ou sqrt(n) tambem (matematica permite)  
         return true;
         // se k se igualar a n então não existe nenhum Nº
         // que divida n alem dele mesmo, logo primo 
