@@ -16,6 +16,7 @@ by:<a href="https://www.linkedin.com/in/henrickyl/" > Henricky Lima</a>
 - [**Pseudo-Código**](##Pseudo-Código)
 - [**Tipos de Dados**](##Tipos-de-Dados)
 - [**Conversão de Dados**](##Conversão-de-Dados)
+- [**Concatenação**](#Concatenação:)
 - [**Formatando String**](##Formatando-String)
 - [**Operadores:**](##Operadores)
     - Aritmético
@@ -36,7 +37,7 @@ by:<a href="https://www.linkedin.com/in/henrickyl/" > Henricky Lima</a>
 <hr style = "page-break-before: always;">
 
 ## JavaScript
-<img src="https://4.bp.blogspot.com/-pYn2LAUvMNQ/WtWXBIT2IRI/AAAAAAAACK8/n9pH7ikTpo4xqIl8odqkJ7kfnbfpcsbxACLcBGAs/s1600/typescript.png" alt = "Comparação JavaScript, EcmaScript e TypeScript">
+<div style="align-items:center;"><img src="https://4.bp.blogspot.com/-pYn2LAUvMNQ/WtWXBIT2IRI/AAAAAAAACK8/n9pH7ikTpo4xqIl8odqkJ7kfnbfpcsbxACLcBGAs/s1600/typescript.png" alt = "Comparação JavaScript, EcmaScript e TypeScript"></div>
 
 * **Linguagem de programação**
 
@@ -176,6 +177,30 @@ X.toString(X)       "17.5"
 ~~~
 <hr>
 
+## **Concatenação:**
+Concatenação é a operação de juntar duas strings, ou, juntar duas palavras.
+
+~~~javascript
+/* Concatenação:
+  String + String   = String
+  String + Number   = String
+  String + Boolean  = String
+*/
+//ex1
+A = "Azul"
+B = "Marinho"
+A+B             "AzulMarinho"
+//ex2
+Nome    = "Luiz"
+Idade   = 15
+Nota    = 7.5
+Txt     = Nome + " tem " + idade + " anos e tirou " +Nota+ " na média!"
+//resultado    
+"Luiz tem 15 anos e tirou 7.5 na média!" 
+~~~
+
+<hr style = "page-break-before: always;">
+
 ## **Formatando String** - ${}:
 
 Visando facilitar a vida de quem está aprendendo a programar, existe esta técnica chamada **Template Strings** que permite a concatenação de strings de uma forma mais robusta.
@@ -187,7 +212,7 @@ Txt = `${Nome} tem ${idade} anos e tirou ${Nota} na média! `
 Txt = Nome + " tem " + idade + " anos e tirou " +Nota+ " na média!"
 ~~~
 
-### Alguns Métodos da variável String
+### **Alguns Métodos da variável String**
 JavaScript trabalha com objetos, ou seja, elementos que carregam atributos e métodos padrões - Este conceito está relacionado com o conceito de **Orientação a Objetos**. Estas variáveis(atributos) e Funções(métodos),  que um objeto trás podem ser acessadas utilizando ponto(**.**). Alguns exemplos desta funcionalidade:
 
 ~~~javascript
@@ -204,12 +229,13 @@ data = "12/05/2020"
 data.split('/')     [ '12', '05', '2020' ]
 ~~~
 
-<hr style = "page-break-before: always;">
+<hr>
 
 
-## Operadores
 
-<table border = 2px style="text-align:center;margin:auto;" >
+## **Operadores**
+
+<table border="2px" >
         <tr><th>Operadores Aritmeticos</th></tr>
         <tr style="font-weight: bold;">
                 <th style = "background-color:#777777;">Operador</th>
@@ -224,7 +250,7 @@ data.split('/')     [ '12', '05', '2020' ]
                 <td>Decremento</td>
                 <td>Atribuição com operação</td>
         </tr>
-        <tr > 
+        <tr style="text-align:center;"> 
                 <th style = "background-color:#777777;">Simbolo</th>
                 <td>=</td> 
                 <td>+</td>
@@ -248,7 +274,7 @@ var res = x / y                      //x dividido por y
 var res = x % y                      //x resto da divisão por y
 ~~~
 
-<table border = 2px style="text-align:center;margin:auto;" >
+<table border="2px" >
         <tr><th>Operadores Relacionais</th></tr>
         <tr style="font-weight: bold;">
                 <th style = "background-color:#777777;">Operador</th>
@@ -260,15 +286,15 @@ var res = x % y                      //x resto da divisão por y
                 <td>Maior ou igual</td>
                 <td>Menor ou igual</td>
         </tr>
-        <tr > 
+        <tr style="text-align:center;"> 
                 <th style = "background-color:#777777;">Simbolo</th>
-                <td>===</td> 
-                <td>==</td>
-                <td>!=</td>
-                <td>></td>
-                <td><</td>
-                <td>>=</td>
-                <td><=</td>
+                <td> === </td> 
+                <td> == </td>
+                <td> != </td>
+                <td> > </td>
+                <td> < </td>
+                <td> >= </td>
+                <td> <= </td>
         </tr>
 </table>
 
@@ -281,8 +307,9 @@ var res = x % y                      //x resto da divisão por y
 // x >= y                      x Maior ou igual y
 // x <= y                      x Menor ou igual y
 ~~~
+<div style = "page-break-before: always;"></div>
 
-<table border = 2px style="text-align:center;margin:auto;" >
+<table border="2px"  >
         <tr><th>Operadores Lógicos</th></tr>
         <tr style="font-weight: bold;">
                 <th style = "background-color:#777777;">Operador</th>
@@ -290,7 +317,7 @@ var res = x % y                      //x resto da divisão por y
                 <td> Ou </td>
                 <td> Não </td>
         </tr>
-        <tr > 
+        <tr style="text-align:center;"> 
                 <th style = "background-color:#777777;">Simbolo</th>
                 <td>&&</td> 
                 <td>||</td>
@@ -306,13 +333,13 @@ var res = x % y                      //x resto da divisão por y
 ~~~
 <hr>
 
-## Lógica
+## **Lógica**
 * **Tabela verdade**
 <img src="https://www.startertutorials.com/blog/wp-content/uploads/2016/08/cpp-logicalops-truth-tables.png">
 
 <hr style = "page-break-before: always;">
 
-## Comandos JS
+## **Comandos JS**
 
 ### **Comentário:**
 ~~~javascript
@@ -346,12 +373,20 @@ var nome = prompt("Digite seu nome:") //na forma de box
 
 ~~~javascript
 // If / Se
-if(condição){
+if( condição1 ){
         //Bloco de código
+}else if( condição2){
+        //bloco de código 
+}else{
+        //bloco de código
 }
 //exemplo
-if( x%2 === 0 ){ /
-    console.log("x é par")
+if( x > y ){ 
+    console.log("x é maior")
+}else if( x < y ){
+    console.log("y é maior")
+}else{
+    console.log("São iguais")
 }
 ~~~
 * Switch
@@ -368,6 +403,7 @@ switch(variavel){
                 //bloco de código 
 }
 ~~~
+<div style = "page-break-before: always;">
 * Operador Ternário
 
 ~~~javascript
@@ -377,7 +413,7 @@ variable = condition ? op_if_yes : op_if_not
 var a=5,b=7;
 var res = (a>b):"maior": "menor";
 ~~~
-<hr style = "page-break-before: always;">
+<hr>
 
 ### **Repetição**
 
@@ -438,15 +474,41 @@ A declaração for...of cria uma laço com objetos interativos executando uma it
 for(valor_objeto of objeto){
     //bloco de código
 }
-
 //exemplo
 var Nomes = ["caio", "yusuke", "Henricky", "Pedro", "Alfredo"]
 for( let nome of Nomes ){
     console.log( nome + " tem " + nome.length + " letras")
 }
 ~~~
+<hr style = "page-break-before: always;">
 
-<div style="margin-left:80vw;">
+### **Listas, Vetores e Objetos:**
+
+* **Vetores:**
+
+Vetores são objetos que armazenam uma quantidade finita de valores do mesmo tipo. Eles tendem a ter um tamanho **n** e cada elemento é referenciado por um indice **i**.
+~~~javascript
+//vetor
+var v = [10, 15, 6, 8] // length: 4
+//v[i]
+v[0]            10
+v[1]            15
+v[3]            8
+~~~
+* **Lista:**
+
+Lista são, basicamente, vetores que armazenam valores de tipo diferentes. Assim como vetor elas tem indice e tamanho.
+~~~javascript
+//lista
+var list  = ["baleia", 42, "toalha", true, false]
+~~~
+
+* **Objeto:**
+~~~javascript
+var pessoa = {nome: "Luiz", idade: 23, cidade:"Quixadá", casado:true}
+~~~
+
+<div style="margin-left:100vw;">
 <strong>Em Construção...</strong>
 </div>
 
