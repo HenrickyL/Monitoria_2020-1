@@ -8,11 +8,14 @@
 int main(){
     //v
     int n=10;
-    int v[n];
+    int v[n]; // 1, 2, 3, 4, 5, 6, 10 
+
     bool ord = true;
     for(int i=0; i< n-1; i++){
-    
-        ord = ord && (v[i] < v[i+1]);
+        if(v[i] > v[i+1]){
+            ord = false;
+            break; 
+        }
     }
 
 
