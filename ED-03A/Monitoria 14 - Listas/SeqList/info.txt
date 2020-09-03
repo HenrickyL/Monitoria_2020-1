@@ -1,0 +1,3 @@
+$ g++ -c Qx_list.cpp -o qx
+$ g++ main.cpp qx -o exe
+
