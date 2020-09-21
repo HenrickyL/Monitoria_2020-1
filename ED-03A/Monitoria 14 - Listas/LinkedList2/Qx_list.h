@@ -21,6 +21,9 @@ public:
     void print();               //O(n)
     void size();
     void remove(int x);         //O(n)
+    void concat(List* lst);     //O(1)
+    node* search(int x);
+    void removeNode(node *p);
 };
 
 

@@ -22,17 +22,7 @@ int main(){
     l->clear();
     l->print();
 
-
-
-
-
-
+   
     delete l;
-
-
-
-
-
-
     return 0;
 }
