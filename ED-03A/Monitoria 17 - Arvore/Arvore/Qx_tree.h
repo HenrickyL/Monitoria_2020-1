@@ -21,5 +21,14 @@ Node* bt_dellLeaf(Node* root);
 
 // conta o número de folhas de uma árvore binária.
 int bt_countLeaf(Node* node);
+//verifica se duas arvores são iguais
+bool bt_identicas(Node *a1, Node *a2);
+
+
+
+/////////////////////
+void bt_printInterative(Node* node); 
+
+int bt_numNos_iterativo(Node *no);
 
 #endif

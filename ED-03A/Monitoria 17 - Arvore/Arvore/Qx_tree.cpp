@@ -78,3 +78,69 @@ Node* bt_dellLeaf(Node* node){
         return node;
     }
 }
+
+
+bool bt_identicas(Node *a1, Node *a2){
+    //caso base
+    if(a1==nullptr && a2 == nullptr){
+        return true;
+    }else if(a1==nullptr || a2 == nullptr){
+        std::cout<<"*";
+        return false;   
+    }
+    //chamada da recursão
+    else{
+        if(a1->value == a2->value){
+        //se os valores forem iguais, continuo verificando
+            //tem alguma diferença nos filhos esquerdos
+            bool l = bt_identicas(a1->left,a2->left);
+            bool r = bt_identicas(a1->right, a2->right);
+            return l&&r;
+        }else{
+            return false;
+
+        }
+    }
+}
+
+#include <stack>
+
+void bt_printInterative(Node* root){
+    std::stack<Node*> p;
+    Node* node = root;
+    while(node!=nullptr || !p.empty()){
+        if(node != nullptr){
+            std::cout<<node->value<<", "; 
+            p.push(node);
+            node = node->left;
+        }else{
+            node = p.top();
+            p.pop();
+            node = node->right;
+        }
+    }
+    std::cout<<"\n";
+
+}
+
+
+int bt_numNos_iterativo(Node *no){
+    int qtd=0;
+
+    std::stack<Node*> p;
+    Node* node = no;
+    while(node!=nullptr || !p.empty()){
+        if(node!= nullptr){
+            qtd++;
+            p.push(node);
+            node = node->left;
+        }else{
+            node = p.top();
+            p.pop();
+            node = node->right;
+        }
+
+    }
+
+    return qtd;
+}

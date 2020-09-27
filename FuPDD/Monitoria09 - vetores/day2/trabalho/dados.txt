@@ -1,0 +1,34 @@
+banana 0.57 98
+maca 0.87 54
+mamao 4.23 35
+arroz 4.79 152
+feijao 5.91 134
+macarrao 3.19 87
+pao 4.12 243
+-
+Joao Almeida
+banana 4
+mamao 1
+arroz 2
+feijao 2
+
+Francisco Goncalves
+maca 3
+mamao 2
+arroz 4
+feijao 3
+macarrao 1
+
+Maria da Silva
+pao 2
+arroz 3
+feijao 3
+macarrao 2
+
+Henricky Lima
+pao 2
+arroz 3
+feijao 3
+macarrao 2
+
+-
